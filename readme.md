@@ -20,9 +20,6 @@ Run:
 Run:
     ```python3 full_ocr_pipeline.py```
 
-Outputs for this step are already available in:
-    /full_output_pipeline_new_imgs_from_s3
-
 Benchmark results saved as:
     benchmark_results.xlsx
 
