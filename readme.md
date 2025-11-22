@@ -16,11 +16,7 @@ Run:
 Run:
     ```python3 utils/pdf_to_img.py```
 
-### Step 3: Extract corresponding Textract output JSONs
-Run:
-    ```python3 utils/extract_json_from_combined_textract_jsonl.py```
-
-### Step 4: Run Paddle inference on test images
+### Step 3: Run Paddle inference on test images
 Run:
     ```python3 full_ocr_pipeline.py```
 
@@ -30,10 +26,14 @@ Outputs for this step are already available in:
 Benchmark results saved as:
     benchmark_results.xlsx
 
-### Step 5: Merge multiple Paddle JSON files for multi-page PDFs
+### Step 4: Merge multiple Paddle JSON files for multi-page PDFs
 (Paddle creates one JSON per image; Textract creates one JSON per PDF)
 Run:
     ```python3 utils/merge_multiple_paddle_json.py```
+
+### Step 5: Extract corresponding Textract output JSONs
+Run:
+    ```python3 utils/extract_json_from_combined_textract_jsonl.py```
 
 ### Step 6: Compare Paddle output with Textract output
 Run:
